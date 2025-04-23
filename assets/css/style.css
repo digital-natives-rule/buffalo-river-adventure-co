@@ -39,8 +39,8 @@ html {
 
 body {
     /* DESIGN TIME CONTAINER */
-   /* max-width: 375px; */
-   /* border: 3px solid;*/
+    /*max-width: 375px; */
+    /*border: 3px solid; */
     font-size: 1rem;
     font-family: poppins;
     margin: 0px;
@@ -92,7 +92,7 @@ h3 {
 
 .container, .cta-section{
     width:80vw;
-    margin: 0px auto 80px auto;
+    margin: 0px auto 0px auto;
     max-width: 1000px;
   }
 
@@ -106,14 +106,14 @@ h3 {
    }
 
 .img-right{
-    float:right;
+    float: right;
     margin: 10px 0 10px 20px;
     border: 4px double #20627d;
     padding: 5px;
 }
 
 .img-left {
-    float:left;
+    float: left;
     margin: 10px 20px 10px 0px;
     border: 4px double #20627d;
     padding: 5px;
@@ -162,7 +162,7 @@ h3 {
 /* Styled nav-button */
 .nav-button {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--body-text-inverse);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;
@@ -170,13 +170,13 @@ h3 {
 
 .nav-button:hover {
   text-decoration: none;
-  background: rgba(65, 98, 118, 0.8);
+  background: rgba(65, 98, 118, 0.9);
   transition: .4s;
 }
 
 /* Top bar */
-.secondary {
-  font-size: 0.875rem;
+header.primary nav.secondary {
+  font-size: .9rem;
   text-align: center;
   padding: 0.5rem 1rem;
   color: var(--body-text-inverse);
@@ -218,6 +218,10 @@ header.primary nav.secondary {
     list-style-type: none;
   }
 
+  header.primary nav ul li a {
+    font-size: 1.3em;
+  }
+
   header {
     background: var(--light-bg);
     position: relative;
@@ -244,8 +248,9 @@ header.primary nav.secondary {
     overflow: hidden;
   }
 
-div#primary-hero {
-    background-image: url(https://digital-natives-rule.github.io/buffalo-river-adventure-co/assets/img/canoe-fun.jpg);
+header.primary div#primary-hero {
+    background-image: url(https://digital-natives-rule.github.io/buffalo-river-adventure-co/assets/img/canoe-fun-475.webp);
+    height: 300px;
 }
 
 #featured-grid h3{
@@ -260,10 +265,41 @@ div#primary-hero {
 
 
 
-/* #region media queries */
+/* #region media queries -----------------------------------------*/
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem; /* 48px */
+  }
+
+  h2 {
+    font-size: 2.25rem; /* 36px */
+  }
+
+  h3 {
+    font-size: 2rem; /* 32px */
+  }
+  header.primary div#primary-hero {
+    background-image: url(https://digital-natives-rule.github.io/buffalo-river-adventure-co/assets/img/canoe-fun-1000.jpg);
+    height: 500px;
+}
+}
 
 /* Desktop layout */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem; /* 64px */
+  }
+
+  h2 {
+    font-size: 3rem; /* 48px */
+  }
+
+  h3 {
+    font-size: 2.5rem; /* 40px */
+  }
+
   .hamburger {
     display: none;
   }
@@ -272,7 +308,7 @@ div#primary-hero {
     display: flex !important;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 1.5rem;
+    gap: 3.5rem;
   }
 
   #menu-toggle:checked + .hamburger + .nav ul {
@@ -291,6 +327,12 @@ div#primary-hero {
     align-items: center;
     margin: 0px, auto, 0px;
   }
+
+  header.primary div#primary-hero {
+    background-image: url(https://digital-natives-rule.github.io/buffalo-river-adventure-co/assets/img/canoe-fun-1700.webp);
+    height: 400px;
+}
+
 }
 
 /* #endregion media queries ----------- */
