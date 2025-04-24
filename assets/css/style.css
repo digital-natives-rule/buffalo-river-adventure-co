@@ -261,6 +261,101 @@ header.primary div#primary-hero {
 
 /* Weather and Water page */
 
+.chart-panel {
+  background-color: #ffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width:100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  
+
+
+}
+
+.chart-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem; 
+  padding:1rem;
+  justify-items: center;
+}
+
+#weather-table-container{
+  background-color: #ffff;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding:20px;
+  display:block;
+  width:100%;
+  max-width: 500%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+}
+
+#weather-table-container table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#weather-table-container th, #weather-table-container td{
+  padding:20px;
+  text-align:center;
+  border-bottom: 1px solid #ddd;
+
+}
+
+.cta-sectiontips{
+  display:flex;
+  justify-content: space-between;
+  gap:40px;
+  width:80vw;
+  margin: 0px auto 0px auto;
+  max-width: 1000px;
+  align-items: flex-start;
+  margin-top: 0;
+  padding:20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.left-panel, .right-panel{
+  margin-top: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1;
+  padding-top: 0;
+  vertical-align: top;
+  
+}
+.left-panel h2, .right-panel h3{
+  margin-top: 0;
+}
+
+
+.right-panel{
+  margin-left: auto;
+  flex: 0 1 35%;
+
+}
+.right-panel h3{
+  font-size: 1.5rem;
+  
+  
+}
+.right-panel p{
+  font-size: 1rem;
+}
+
+.left-panel{
+  flex: 0 1 65%;
+
+}
 /* Just a heads up Ayat, I moved the rules you wrote for the cotnainer class, header, navbar, and featured grid under main css since none of them were weather p[age specific.*/
 
 

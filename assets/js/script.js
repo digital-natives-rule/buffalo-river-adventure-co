@@ -36,13 +36,16 @@ async function GetData() {
                         label: sitename,
                         data: values,
                         fill: false,
-                        borderColor: 'blue',
+                        borderColor: 'gray',
                         tension: 0.1
                     }]
                 },
                 options: {
                     responsive: false,
                     maintainAspectRatio: true
+
+                    
+                    
                 }
             });
 
@@ -68,7 +71,7 @@ async function GetData() {
                     label: sitename1,
                     data: values1,
                     fill: false,
-                    borderColor: 'pink',
+                    borderColor: 'blue',
                     tension: 0.1
                 }]
             },
@@ -99,7 +102,7 @@ async function GetData() {
                     label: sitename2,
                     data: values2,
                     fill: false,
-                    borderColor: 'green',
+                    borderColor: 'gray',
                     tension: 0.1
                 }]
             },
@@ -130,7 +133,7 @@ async function GetData() {
                 label: sitename3,
                 data: values3,
                 fill: false,
-                borderColor: 'orange',
+                borderColor: 'blue',
                 tension: 0.1
             }]
         },
