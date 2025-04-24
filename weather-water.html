@@ -17,7 +17,7 @@
       <nav class="secondary"><a href="weather-water.html">Weather & Water Levels |</a><span class="phone">(479) 747-4959</span></nav>
       <section class="wrapper container">
         <h1><a href="index.html">Buffalo River Adventure Co</a></h1>
-        <input type="checkbox" id="menu-toggle" />
+        <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger">&#9776;</label>
         <nav class="nav" id="navbar">
           <ul>
@@ -29,7 +29,7 @@
           </ul>
         </nav>
       </section>
-      <div id="primary-hero" class="banner"></div>
+      <div id="primary-hero1" class="banner"></div>
     </header>
 
     <section id="featured-grid" class="container">
@@ -45,10 +45,44 @@
       <div class="chart-container">
         <h2>Water Levels Over Time</h2>
         <p>Water Levels</p>
-        <canvas id="chartjs-0" class="chart-panel" height="400"></canvas>
-        <canvas id="chartjs-1" class="chart-panel" height="400"></canvas>
-        <canvas id="chartjs-2" class="chart-panel" height="400"></canvas>
-        <canvas id="chartjs-3" class="chart-panel" height="400"></canvas>
+        <div class="cards">
+          <div class="flipthecard">
+            <div class="frontcard">
+              <h3>Boxley</h3>
+            
+            <div class="returntofrontcard">
+              <canvas id="chartjs-0" class="chart-panel" height="400"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="flipthecard">
+          <div class="frontcard">
+            <h3>Ponca</h3>
+          </div>
+          <div class="returntofrontcard">
+            <canvas id="chartjs-1" class="chart-panel" height="400"></canvas>
+          </div>
+        </div>
+
+        <div class="flipthecard">
+          <div class="frontcard">
+            <h3>Pruitt</h3>
+          </div>
+          <div class="returntofrontcard">
+            <canvas id="chartjs-2" class="chart-panel" height="400"></canvas>
+          </div>
+        </div>
+
+        <div class="flipthecard">
+          <div class="frontcard">
+            <h3>Carver</h3>
+          </div>
+          <div class="returntofrontcard">
+            <canvas id="chartjs-3" class="chart-panel" height="400"></canvas>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -96,3 +130,4 @@
     <script src="assets/js/weather.js"></script>
   </body>
 </html>
+
