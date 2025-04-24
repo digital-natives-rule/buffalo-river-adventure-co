@@ -6,7 +6,6 @@
 #f2f2f2 - Light bg used for primary nav
 #4f4f4f - primary nav
 #C2A878 - footer bg
-
 -----*/
 
 
@@ -275,7 +274,7 @@ header.primary div#primary-hero {
   position: relative;
 }
 
-.frontcard,.returntofrontcard {
+.frontcard, .frontcard2, .returntofrontcard {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -289,7 +288,7 @@ header.primary div#primary-hero {
 }
 
 .frontcard {
-  background-color: #f2f2f2;
+  background-color: var(--body-text);
   z-index: 2;
   transform: rotateY(0deg);
   display: flex;
@@ -297,7 +296,15 @@ header.primary div#primary-hero {
   align-items: center;
   justify-content: center;
 }
-
+.frontcard2{
+  background-color: var(--dark-bg);
+  z-index: 2;
+  transform: rotateY(0deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .returntofrontcard {
   background-color: white;
   color: #fff;
@@ -316,7 +323,9 @@ header.primary div#primary-hero {
   z-index: 2;
 }
 
-
+.flipthecard h3{
+  color:white;
+}
 
 
 
@@ -368,6 +377,15 @@ header.primary div#primary-hero {
   text-align:center;
   border-bottom: 1px solid #ddd;
 
+
+}
+
+#weather-table-container tr:nth-child(even){
+  background-color: var(--light-bg);
+}
+
+#weather-table-container tr:hover{
+  background-color: #C2A878;
 }
 
 .cta-sectiontips{
@@ -413,6 +431,16 @@ header.primary div#primary-hero {
 
 .left-panel{
   flex: 0 1 65%;
+
+}
+
+#button{
+  color:white;
+  background-color: transparent;
+  height:30px;
+  width:30px;
+  float:right;
+  border-radius: 50% ;
 
 }
 /* Just a heads up Ayat, I moved the rules you wrote for the cotnainer class, header, navbar, and featured grid under main css since none of them were weather p[age specific.*/
