@@ -312,21 +312,27 @@ header.primary div#primary-hero {
   font-weight: 600;
 }
 
-article {
-  display: block; /* Default for mobile */
-  padding: 2rem 1rem;
+.about {
+  display: block;
+  padding: 1rem;
 }
 
-article h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-article img {
+.about-img {
   width: 100%;
   height: auto;
-  margin: 1rem 0;
-  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.about-content {
+  text-align: left;
+}
+
+.info-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 .testimonial {
@@ -704,6 +710,23 @@ article img {
     max-width: 400px;
   }
 
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .about-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
   
   .testimonials-wrapper {
     display: flex;
