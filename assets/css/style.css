@@ -83,6 +83,7 @@ h3 {
     img {
         max-width: 100%;
         height: auto;
+        border-radius: 8px;
   }
 
    /* #endregion global styles---------- */
@@ -252,8 +253,164 @@ header.primary div#primary-hero {
     height: 300px;
 }
 
-#featured-grid h3{
-  text-align:center;
+#featured-grid {
+  padding: 2rem 1rem;
+}
+
+#featured-grid h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid container */
+.hero-photo-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Create the hover overlay */
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4b3520;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+.image-wrapper:hover::after {
+  opacity: 0.2;
+}
+
+.image-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+article {
+  display: block; /* Default for mobile */
+  padding: 2rem 1rem;
+}
+
+article h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.intro {
+  max-width: 100%;
+  margin: 0;
+  padding: 4rem 2rem;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+}
+
+.intro .subtitle {
+  font-size: 1.5rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+}
+
+/*rental subpages */
+
+.intro {
+  padding: 2rem 1rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  margin-bottom: 0.5rem;
+}
+
+.intro .subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--body-text);
+}
+
+.info-feature {
+  padding: 2rem 1rem;
+}
+
+.info-feature h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-feature figure {
+  margin: 0 0 1.5rem 0;
+}
+
+.info-feature figcaption {
+  background-color: #f0f0f0; /* light gray */
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.info-feature ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.info-feature li {
+  margin-bottom: 0.75rem;
+}
+
+/* Clearfix to fix float issues */
+.info-feature::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /* #endregion main css */
@@ -266,6 +423,7 @@ header.primary div#primary-hero {
   align-items: stretch;
   gap:2rem;
 }
+
 .flipthecard {
   background-color: transparent;
   width: 450px;
@@ -296,6 +454,7 @@ header.primary div#primary-hero {
   align-items: center;
   justify-content: center;
 }
+
 .frontcard2{
   background-color: var(--dark-bg);
   z-index: 2;
@@ -305,6 +464,7 @@ header.primary div#primary-hero {
   align-items: center;
   justify-content: center;
 }
+
 .returntofrontcard {
   background-color: white;
   color: #fff;
@@ -327,8 +487,6 @@ header.primary div#primary-hero {
   color:white;
 }
 
-
-
 .chart-panel {
   background-color: #ffff;
   border-radius: 1rem;
@@ -338,9 +496,6 @@ header.primary div#primary-hero {
   width:450px;
   max-width: 100%;
   margin-bottom: 20px;
-  
-
-
 }
 
 .chart-grid{
@@ -364,7 +519,6 @@ header.primary div#primary-hero {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-
 }
 
 #weather-table-container table{
@@ -376,8 +530,6 @@ header.primary div#primary-hero {
   padding:20px;
   text-align:center;
   border-bottom: 1px solid #ddd;
-
-
 }
 
 #weather-table-container tr:nth-child(even){
@@ -414,7 +566,6 @@ header.primary div#primary-hero {
   margin-top: 0;
 }
 
-
 .right-panel{
   margin-left: auto;
   flex: 0 1 35%;
@@ -423,7 +574,6 @@ header.primary div#primary-hero {
 .right-panel h3{
   font-size: 1.5rem;
   
-  
 }
 .right-panel p{
   font-size: 1rem;
@@ -431,7 +581,6 @@ header.primary div#primary-hero {
 
 .left-panel{
   flex: 0 1 65%;
-
 }
 
 #button{
@@ -441,7 +590,6 @@ header.primary div#primary-hero {
   width:30px;
   float:right;
   border-radius: 50% ;
-
 }
 /* Just a heads up Ayat, I moved the rules you wrote for the cotnainer class, header, navbar, and featured grid under main css since none of them were weather p[age specific.*/
 
@@ -449,7 +597,7 @@ header.primary div#primary-hero {
 
 /* #region media queries -----------------------------------------*/
 
-/* Tablet breakpoint */
+/* Tablet breakpoint (min-width: 768px) */
 @media (min-width: 768px) {
   h1 {
     font-size: 3rem; /* 48px */
@@ -462,13 +610,63 @@ header.primary div#primary-hero {
   h3 {
     font-size: 2rem; /* 32px */
   }
+
   header.primary div#primary-hero {
     background-image: url(https://digital-natives-rule.github.io/buffalo-river-adventure-co/assets/img/canoe-fun-1000.jpg);
     height: 500px;
-}
+  }
+
+  .hero-photo-grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .image-wrapper {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .info-feature {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .info-feature h2 {
+    font-size: 2.5rem;
+  }
+
+  .float-left {
+    width: 30%;
+    margin-right: 2rem;
+  }
+
+  .info-feature ul {
+    font-size: 1.1rem;
+  }
+
+  .intro {
+    max-width: 50%;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 4rem 2rem;
+  }
+
+  .intro h2 {
+    font-size: 2.5rem;
+  }
+
+  .intro .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .intro p {
+    font-size: 1.1rem;
+  }
 }
 
-/* Desktop layout */
+/* Desktop layout (min-width: 1024px) */
 @media (min-width: 1024px) {
   h1 {
     font-size: 4rem; /* 64px */
@@ -513,7 +711,27 @@ header.primary div#primary-hero {
   header.primary div#primary-hero {
     background-image: url(https://digital-natives-rule.github.io/buffalo-river-adventure-co/assets/img/canoe-fun-1700.webp);
     height: 400px;
-}
+  }
+
+  .info-feature {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .info-feature h2 {
+    font-size: 2.5rem;
+  }
+
+  .float-left {
+    width: 30%;
+    margin-right: 2rem;
+  }
+
+  .info-feature ul {
+    font-size: 1.1rem;
+  }
+
 
 }
 
