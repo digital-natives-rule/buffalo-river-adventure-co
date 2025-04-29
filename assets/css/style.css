@@ -360,7 +360,7 @@ article img {
 .testimonial span {
   display: block;
   font-size: 0.9rem;
-  color: #555;
+  color: var(--light-bg);
 }
 
 .cta-section {
@@ -668,7 +668,7 @@ article img {
   height:30px;
   width:30px;
   float:right;
-  border-radius: 50% ;
+  border-radius: 50%;
 }
 
 
@@ -704,20 +704,7 @@ article img {
     max-width: 400px;
   }
 
-  article {
-    display: grid;
-    grid-template-columns: 1fr 500px; /* Text on left, image on right */
-    gap: 2rem;
-    align-items: start;
-  }
-
-  article img {
-    margin: 0;
-    order: 2; /* Image goes on the right */
-    width: 100%;
-    height: auto;
-  }
-
+  
   .testimonials-wrapper {
     display: flex;
     gap: 1rem;
