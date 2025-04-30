@@ -194,6 +194,8 @@ header.primary nav.secondary {
   color: var(--body-text-inverse);
 }
 
+
+
 header.primary nav.secondary {
     display: flex;
     align-items: center;
@@ -480,7 +482,7 @@ header.primary div#primary-hero {
 
 .intro h1, .intro p {
   margin-bottom: 0.5rem;
-  padding:25px;
+  padding-left:40px;
 
 }
 
@@ -653,6 +655,8 @@ header.primary div#primary-hero {
   margin-top: 30px;
 }
 
+
+
 #weather-table-container table, .canoe-rental table {
   border-collapse: collapse;
   width: 100%;
@@ -666,12 +670,11 @@ header.primary div#primary-hero {
 
 .safety-tips {
   padding-bottom: 5rem;
-  margin-bottom: 5px;
 }
 
 .safety-tips th, .safety-tips td{
   border-bottom: 1px solid #ddd;
-  text-align: left;
+  text-align: center;
   padding: 10px 12px;
 }
 #weather-table-container tr:nth-child(even){
@@ -681,6 +684,8 @@ header.primary div#primary-hero {
 #weather-table-container tr:hover{
   background-color: #C2A878;
 }
+
+
 
 /* Back to top button ---*/
 #backToTop{
@@ -962,6 +967,7 @@ header.primary div#primary-hero {
   
 }
 
+
 .amenities h2{
   margin:0 auto;
   color: #393651;
@@ -977,11 +983,14 @@ header.primary div#primary-hero {
   flex: 1;
   list-style-type: disc;
   padding-left: 20px;
+  margin-top: 20px;
+
 }
 
 .amenities p{
   margin-bottom: 20px;
 }
+
 
 
 /* #endregion media queries ----------- */
