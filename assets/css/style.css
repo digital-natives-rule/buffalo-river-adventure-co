@@ -173,18 +173,21 @@ h3 {
   background: rgba(65, 98, 118, 0.9);
   transition: .4s;
 }
-/* Styled secondary nav-button */
+/* Styled secondary nav-button */ 
+
+/*
  .weather-button {
-  background-color: #4A6D8C; /* lighter blue */
+  background-color: #4A6D8C; 
   border: 1px solid white;
   padding: 6px 12px;
   border-radius: 4px;
   color: white;
-  text-decoration: none;
-}
+  text-decoration: none; 
+} 
  .weather-button:hover {
-  background-color: #365776; /* darker on hover */
+  background-color: #365776; 
 }
+*/
 
 /* Top bar */
 header.primary nav.secondary {
@@ -640,7 +643,7 @@ header.primary div#primary-hero {
   justify-items: center;
 }
 
-#weather-table-container, .canoe-rental{
+#weather-table-container, .canoe-rental {
   background-color: #ffff;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
