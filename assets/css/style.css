@@ -173,6 +173,18 @@ h3 {
   background: rgba(65, 98, 118, 0.9);
   transition: .4s;
 }
+/* Styled secondary nav-button */
+ .weather-button {
+  background-color: #4A6D8C; /* lighter blue */
+  border: 1px solid white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+}
+ .weather-button:hover {
+  background-color: #365776; /* darker on hover */
+}
 
 /* Top bar */
 header.primary nav.secondary {
@@ -257,7 +269,7 @@ header.primary div#primary-hero {
   padding: 2rem 1rem;
 }
 
-#featured-grid h2 {
+#featured-grid h2{
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -269,6 +281,12 @@ header.primary div#primary-hero {
   gap: 2rem;
 }
 
+.carousel img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
 
 .image-wrapper {
   position: relative;
@@ -460,8 +478,10 @@ header.primary div#primary-hero {
   margin: 0 auto;
 }
 
-.intro h2 {
+.intro h2, .intro p {
   margin-bottom: 0.5rem;
+  padding:25px;
+
 }
 
 .intro .subtitle {
@@ -511,6 +531,8 @@ header.primary div#primary-hero {
   display: block;
   clear: both;
 }
+
+
 
 /* #endregion main css */
 
@@ -570,10 +592,14 @@ header.primary div#primary-hero {
   transform: rotateY(180deg);
   z-index: 1;
   padding: 1em;
-  box-sizing: border-box;
+  box-sizing: border-box; 
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  padding:0;
 }
 
-.flipthecard:hover .frontcard {
+.flipthecard:hover .frontcard, .flipthecard:hover .frontcard2 {
   transform: rotateY(-180deg);
 }
 
@@ -612,7 +638,7 @@ header.primary div#primary-hero {
   justify-items: center;
 }
 
-#weather-table-container{
+#weather-table-container, .canoe-rental{
   background-color: #ffff;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
@@ -627,12 +653,12 @@ header.primary div#primary-hero {
   margin-top: 30px;
 }
 
-#weather-table-container table{
+#weather-table-container table, .canoe-rental table{
   border-collapse: collapse;
   width: 100%;
 }
 
-#weather-table-container th, #weather-table-container td{
+#weather-table-container th, #weather-table-container td, .canoe-rental th, .canoe-rental td{
   padding:20px;
   text-align:center;
   border-bottom: 1px solid #ddd;
@@ -676,16 +702,33 @@ header.primary div#primary-hero {
   flex: 0 1 65%;
 }
 
-#button{
+/* Back to top button ---*/
+#backToTop{
+  position: fixed;
+  right:20px;
+  bottom: 20px;
   color:white;
   background-color: transparent;
-  height:30px;
-  width:30px;
-  float:right;
+  height:50px;
+  width:50px;
   border-radius: 50%;
+  display:flex;
+  float: right;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition:  opacity 0.8s ease, visibility 0.4s;
+  line-height: 1;
 }
 
+#backToTop.show{
+  opacity: 1;
+  visibility: visible;
 
+}
 /* #region media queries -----------------------------------------*/
 
 /* Tablet breakpoint (min-width: 768px) */
@@ -713,17 +756,10 @@ header.primary div#primary-hero {
     gap: 2rem;
   }
 
-  .hero img, #hero img {
+  .hero img, #hero img{
     height:300px;
-    width:300px;
+    width:325px;
   }
-
-  .carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
 
   .image-wrapper {
     flex: 1;
@@ -751,13 +787,18 @@ header.primary div#primary-hero {
   .testimonials-wrapper {
     display: flex;
     gap: 1rem;
+    
   }
 
   .testimonial {
     flex: 1;
     margin-bottom: 0; /* remove bottom margin since they're side-by-side */
+    
   }
 
+ div.article-footer span {
+  color:black;
+ }
   .cta-section {
     display: flex;
     justify-content: center;
@@ -898,6 +939,57 @@ header.primary div#primary-hero {
   }
 
 
+}
+
+/* stay form format -- */
+.hero-photo-grid + section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.hero-photo-grid + section .booking-container {
+  flex: 1 1 400px;
+  max-width: 450px;
+  min-height: 250px;
+  overflow: visible;
+ 
+}
+
+.image-container img{
+  height:450px;
+  width:625px;
+}
+
+.amenities {
+  display:flex;
+  align-items: center;
+  gap: 20px; 
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.amenities img{
+  height: 380px;
+  width: 300px;
+  float: right;
+  
+}
+
+.amenities h2{
+  margin:0 auto;
+  color: #393651;
+ display: block;
+  width:100%;
+  padding-bottom: 20px;
+  
+}
+
+.amenities p{
+  flex: 1;
+  font-size: 20px;
 }
 
 /* #endregion media queries ----------- */

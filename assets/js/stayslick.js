@@ -1,3 +1,0 @@
-$('.carousel').slick({
-    rtl: true
-  });

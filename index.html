@@ -24,7 +24,11 @@
 </head>
 <body>
   <header class="primary">
-    <nav class="secondary"><a href="weather-water.html">Weather & Water Levels |</a><span class="phone">(479) 747-4959</span></nav>
+    <nav class="secondary">
+      <a href="weather-water.html" class="weather-button">Weather & Water Levels</a>
+      <span class="divider">|</span>
+      <span class="phone">Call Us: (479) 747-4959</span>
+    </nav>
     <section class="wrapper container">
        <h1><a href="index.html">Buffalo River Adventure Co</a></h1>
        <!-- Hamburger menu toggle -->
@@ -98,7 +102,7 @@
       </header>
       <div>
         <img src="assets/img/profile-1.png" alt="Profile photo of reviewer">
-        <div>
+        <div class="article-footer">
           <span>Jess M.</span>
           <span>Stayed at Bear Ridge • March 2025</span>
         </div>
@@ -111,7 +115,7 @@
       </header>
       <div>
         <img src="assets/img/profile-2.png" alt="Profile photo of reviewer">
-        <div>
+        <div class="article-footer">
           <span>Tyler G.</span>
           <span>Canoe rental • April 2025</span>
         </div>
@@ -124,7 +128,7 @@
       </header>
       <div>
         <img src="assets/img/profile-3.png" alt="Profile photo of reviewer">
-        <div>
+        <div class="article-footer">
           <span>Maya L.</span>
           <span>Weekend Adventure • April 2025</span>
         </div>
@@ -136,6 +140,7 @@
       <a href="float.html" class="cta-button">Rent Canoes</a>
       <a href="stay.html" class="cta-button">Stay at Bear Ridge</a>
   </section>
+  <button id="backToTop" onclick="scrollToTop()"><img src="assets/img/pointer-removebg-preview.png"></button>
   <footer id="colophon">
     <div class="footer-content">
       <div class="footer-left">
@@ -167,6 +172,8 @@
   </footer>
   <!--this is a test of live coding we are currently all in the codespace can you see this reply with Y or N -->
   <!--Yo YES-->
+  <script src="assets/js/button.js"></script>
+
   <script src="assets/js/slick.js"></script>
 </body>
 </html>

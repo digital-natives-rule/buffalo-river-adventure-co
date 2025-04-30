@@ -24,7 +24,11 @@
 </head>
 <body>
   <header class="primary">
-    <nav class="secondary"><a href="weather-water.html">Weather & Water Levels |</a><span class="phone">(479) 747-4959</span></nav>
+    <nav class="secondary">
+      <a href="weather-water.html" class="weather-button">Weather & Water Levels</a>
+      <span class="divider">|</span>
+      <span class="phone">Call Us: (479) 747-4959</span>
+    </nav>
     <section class="wrapper container">
        <h1><a href="index.html">Buffalo River Adventure Co</a></h1>
        <!-- Hamburger menu toggle -->
@@ -50,30 +54,17 @@
   <section class="two-col-grid container">
     <div class="image-container">
       <section class="hero-photo-grid">
-          <img src="assets/img/bear-ridge-1.jpg" alt="cabins" class="grid-item"/>
-          <img src="assets/img/bear-ridge-2.jpg" alt="camps" class="grid-item"/>
+          <img src="assets/img/bear-ridge-1.webp" alt="cabins" class="grid-item"/>
+          <img src="assets/img/bear-ridge-2.webp" alt="camps" class="grid-item"/>
         </a>
       </section>
       <section>
-     <div class="booking-container-">
-      <h2>Nightly Rate</h2>
-      <p><strong>$195</strong> /night</p>
-      <ul>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-      </ul>
-      <button>Book Now</button>
-     </div>
-     <div class="booking-container-">
-      <h2>Nightly Rate</h2>
-      <p><strong>$1195</strong> /week</p>
-      <ul>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-      </ul>
-      <button>Book Now</button>
+        <h3>Cabin rental plans—see the options below.</h3>
+     <div class="booking-container">
+      <script type="text/javascript" src="https://form.jotform.com/jsform/251188714999172"></script>     
+    </div>
+     <div class="booking-container">
+      <script type="text/javascript" src="https://form.jotform.com/jsform/251188847265165"></script>
      </div>
   </section>
   <section class="amenities">
@@ -91,7 +82,8 @@
   </section>
   <section class="interior-carousel">
     <h2>Take a Look Around</h2>
-    <div class="carousel">
+    <div class="carousel" dir="rtl">
+
       <div><img src="assets/img/cabin-carousel/creekside-bedroom-2-2048x1365.webp" alt="Interior 1"></div>
       <div><img src="assets/img/cabin-carousel/creekside-cabin-bed-2048x1366.webp" alt="Interior 2"></div>
       <div><img src="assets/img/cabin-carousel/creekside-kitchen-1-2048x1365.webp" alt="Interior 3"></div>
@@ -125,8 +117,10 @@
     <p>Address: 1234 River Road, Ponca, Arkansas</p>
     <div id="location-frame">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.652732945525!2d-93.36465958478273!3d36.02485858011607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cd1fdff0d5da35%3A0xb0bbee1d653e9371!2sPonca%2C%20AR%2072670%2C%20USA!5e0!3m2!1sen!2sus!4v1682183940519!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+    </div>
   </section>
+  <button id="backToTop" onclick="scrollToTop()"><img src="assets/img/pointer-removebg-preview.png"></button>
+ 
   <footer id="colophon">
     <div class="footer-content">
       <div class="footer-left">
@@ -156,9 +150,10 @@
       <small>&copy; 2025 Buffalo River Adventure Co.</small>
     </div>
   </footer>
-  <!--this is a test of live coding we are currently all in the codespace can you see this reply with Y or N -->
-  <!--Yo YES-->
-  <script src="assets/js/stayslick.js"></script>
+
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/button.js"></script>
+
 
 </body>
 </html>

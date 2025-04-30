@@ -10,6 +10,8 @@
   <meta name="robots" content="noindex">
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link href="assets/css/style.css" rel="stylesheet"/>
+  <script src="assets/js/button.js"></script>
+
   <!---Google Font links-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +19,11 @@
 </head>
 <body>
   <header class="primary">
-    <nav class="secondary"><a href="weather-water.html">Weather & Water Levels |</a><span class="phone">(479) 747-4959</span></nav>
+    <nav class="secondary">
+      <a href="weather-water.html" class="weather-button">Weather & Water Levels</a>
+      <span class="divider">|</span>
+      <span class="phone">Call Us: (479) 747-4959</span>
+    </nav>
     <section class="wrapper container">
        <h1><a href="index.html">Buffalo River Adventure Co</a></h1>
        <!-- Hamburger menu toggle -->
@@ -52,14 +58,16 @@
           <figure>
             <img src="assets/img/Big-elk-contentsize-wildlife.jpg" alt="Elk">
             <h4>Elk</h4>
-            <figcaption>Photos + brief fact</figcaption>
+            <figcaption>Spot elk grazing in Boxley Valley, especially at dusk or dawn
+
+            </figcaption>
           </figure>
         </div>
         <div class="category">
           <figure>
             <img src="assets/img/wormseye-bird-flying-wildlife.jpg" alt="Bird Flying">
             <h4>Birds</h4>
-            <figcaption>Songbirds, hawks, eagles, etc.</figcaption>
+            <figcaption>Look up for eagles, hawks, and colorful songbirds.</figcaption>
           </figure>
         </div>
         <div class="category">
@@ -115,6 +123,7 @@
         <button type="submit">Submit</button>
     </form>
 </section>
+<button id="backToTop" onclick="scrollToTop()"><img src="assets/img/pointer-removebg-preview.png"></button>
   <footer id="colophon">
     <div class="footer-content">
       <div class="footer-left">
@@ -146,5 +155,6 @@
   </footer>
   <!--this is a test of live coding we are currently all in the codespace can you see this reply with Y or N -->
   <!--Yo YES-->
+
 </body>
 </html>
