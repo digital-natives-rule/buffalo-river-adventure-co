@@ -8,9 +8,12 @@
   <meta name="title" content="Let's book your next Buffalo River adventure!">
   <meta name="description" content="Discover the best of Buffalo National River with our cabin and canoe rentals!">
   <meta name="robots" content="noindex">
-  <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link href="assets/css/style.css" rel="stylesheet"/>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="assets/js/button.js"></script>
+  <script src="assets/js/script.js"></script>
 
   <!---Google Font links-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,14 +45,14 @@
     </section>
   </header>
    <!-- Hero Section -->
-   <section class="hero-banner">
+   <section id="featured-grid" class="container">
     <h1>Wildlife of the Buffalo</h1>
     <p>The Ozark wilderness is one of the best places in America to spot wildlife in its natural habitat. Whether you're first-time visitor or seasoned tracker, keep your eyes and ears open—you never know what you'll find out here.</p>
     <img src="assets/img/elkviewing-animal-landcape-banner-wildlife.jpg" alt="Buffalo wildlife image">
 </section>
 
 <!-- Wildlife Categories -->
-<section class="wildlife-categories">
+<section id="featured-grid" class="wildlife-categories">
     <h2>Wildlife Categories</h2>
     <p>Explore the different wildlife categories in the region</p>
     <img src="assets/img/baby-bear-wildlife.jpg" alt="Baby Black Bear">
@@ -105,7 +108,7 @@
 <section class="wildlife-moments">
     <h2>Discover Wildlife Moments</h2>
     <div class="social-post">
-        <img src="assets/img/dog-on canoe-wildlife.jpg" alt="Instagram post example">
+        <img src="assets/img/dog-on-canoe-wildlife.jpg" alt="Instagram post example">
         <p>Caught a glimpse of this amazing creature today 🦌</p>
     </div>
 </section>
@@ -123,8 +126,8 @@
         <button type="submit">Submit</button>
     </form>
 </section>
-<button id="backToTop" onclick="scrollToTop()"><img src="assets/img/pointer-removebg-preview.png"></button>
-  <footer id="colophon">
+<button id="backToTop" onclick="scrollToTop()"><img src="assets/img/pointer-removebg-preview.png" alt="scrollarrow"></button>
+<footer id="colophon">
     <div class="footer-content">
       <div class="footer-left">
         <span class="site-name">Buffalo River Adventure Co.</span>

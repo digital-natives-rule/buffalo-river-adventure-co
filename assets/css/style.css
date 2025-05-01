@@ -957,7 +957,7 @@ header.primary div#primary-hero {
   
 }
 
-.amenities img{
+.amenities img {
   position: absolute;
   top:0;
   right:0;
@@ -973,7 +973,7 @@ header.primary div#primary-hero {
 
 .amenities h2{
   margin:0 auto;
-  color: #393651;
+  color: #000000;
   display: block;
   width:100%;
   padding-bottom: 10px;
@@ -990,10 +990,36 @@ header.primary div#primary-hero {
 
 }
 
-.amenities p{
+.amenities p, .wildlife-categories p{
   margin-bottom: 20px;
 }
 
+
+/* Wildlife page */
+.wildlife-categories {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+
+
+}
+
+.wildlife-categories img {
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  right: 190px;
+  top:10px;
+  z-index: -1;
+  float: right;
+}
+
+.wildlife-categories h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+}
 
 
 /* #endregion media queries ----------- */

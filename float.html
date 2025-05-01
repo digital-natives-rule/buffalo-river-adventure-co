@@ -9,7 +9,7 @@
   <meta name="description" content="Discover the best of Buffalo National River with our cabin and canoe rentals!">
   <meta name="robots" content="noindex">
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="assets/css/style.css" rel="stylesheet" >
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="assets/js/script.js"></script>
@@ -104,6 +104,32 @@
             <td>$670.00</td>
           </tr>
         </table>
+  </section>
+  <section class="form-container">
+    <h2>Rent Canoes</h2>
+    <form action="https://formspree.io/f/mnndjyaa" method="POST">
+    <label>Your email:
+      <input type="email" name="email">
+    </label>
+    <label>Number of Canoes
+      <select name="dropdown" id="myDropdown">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </label>
+    <label>Date for Reservation
+      <input type="date" name="date">
+    </label>
+  <button type="submit">Reserve</button>
+  </form>
   </section>
   <section class="shuttle-info">
     <h2>Shuttle Info</h2>
