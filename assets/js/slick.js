@@ -17,6 +17,3 @@ $('#hero').slick({
 
 //stay page js
 
-$('.carousel').slick({
-  rtl: true
-});
