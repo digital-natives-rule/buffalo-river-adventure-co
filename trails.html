@@ -10,6 +10,8 @@
   <meta name="robots" content="noindex">
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link href="assets/css/style.css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <!---Google Font links-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,48 +41,49 @@
     </nav>
     </section>
   </header>
-  
+  <section class="intro">
     <h2>Trails Worth Exploring</h2>
-    <h3>Hit the dirt. Take in the views. Breath deep.</h3>
+    <p><strong>Hit the dirt. Take in the views. Breath.</strong></p>
     <p>Tucked away in the hills near Ponca, Bear Ridge Cabin offers the perfect home base for your next Buffalo River getaway. Designed for two, this fully furnished hideaway is made for romantic escapes, unplugged weekends, or peaceful stays surrounded by nature (and elk!).</p>
+  </section>
     <section class="two-col-grid container">
       <div class="image-container">
         <section class="hero-photo-grid">
             <img src="assets/img/goat-trail-hiking.jpg" alt="cabins" class="grid-item">
             <img src="assets/img/indian-rockhouse.jpg" alt="camps" class="grid-item">
-        
         </section>
       </div>
     </section>
 
-    <section class="popular-trails">
+    <section class="container">
         <h2>Popular Hiking Trails</h2>
-        <div class="trail-grid">
-            <div class="trail-card">
-                <img src="assets/img/lost-valley-trail.jpg" alt="Lost Valley">
-                <div class="card-content">
-                    <h3>Lost Valley</h3>
-                    <p>A must-see trail just minutes from Boxley Ridge Cabin. Features waterfalls, caves, and bluff shelters. (1.2 miles one way)</p>
-                </div>
+        <div class="card-grid">
+          <div class="card-item">
+            <img src="assets/img/lost-valley-trail.jpg" alt="Lost Valley">
+            <div class="card-content">
+              <h3>Lost Valley</h3>
+              <p>A must-see trail just minutes from Boxley Ridge Cabin. Features waterfalls, caves, and bluff shelters. (1.2 miles one way)</p>
             </div>
-            <div class="trail-card">
-                <img src="assets/img/whitaker-point.jpg" alt="Whitaker Point">
-                <div class="card-content">
-                    <h3>Whitaker Point</h3>
-                    <p>One of the most photographed spots in Arkansas. Moderate hike with a big payoff. (3 miles round trip)</p>
-                </div>
+          </div>
+          <div class="card-item">
+            <img src="assets/img/whitaker-point.jpg" alt="Whitaker Point">
+            <div class="card-content">
+              <h3>Whitaker Point</h3>
+              <p>One of the most photographed spots in Arkansas. Moderate hike with a big payoff. (3 miles round trip)</p>
             </div>
-            <div class="trail-card">
-                <img src="assets/img/hemmed-hollow-waterfall.jpg" alt="Hemmed-In Hollow">
-                <div class="card-content">
-                    <h3>Hemmed-In Hollow</h3>
-                    <p>Home to the tallest waterfall between the Rockies and the Appalachians. (5.5 miles round trip from the river)</p>
-                </div>
+          </div>
+          <div class="card-item">
+            <img src="assets/img/hemmed-hollow-waterfall.jpg" alt="Hemmed-In Hollow">
+            <div class="card-content">
+              <h3>Hemmed-In Hollow</h3>
+              <p>Home to the tallest waterfall between the Rockies and the Appalachians. (5.5 miles round trip from the river)</p>
             </div>
+          </div>
         </div>
+        
     </section>
 
-    <section class="mountain-bike">
+    <section class="two-col-grid">
         <h2>Mountain Biking Trails</h2>
         <p>The Buffalo River area offers incredible mountain biking:</p>
         <ul>
@@ -89,10 +92,9 @@
             <li>Local Forest Service Roads – Great for casual rides or gravel grinders looking to explore.</li>
         </ul>
         <img src="assets/img/mountain-biking.jpg" alt="Mountain Biker">
-
     </section>
 
-    <section class="trail-tips">
+    <section class="info-feature container">
         <h2>Tips for Trail Days</h2>
         <figure>
           <img src="assets/img/hiking-fall-leaves.webp" alt="Hiking in the fall leaves with a light coat and beanie cap." style="width:100%; max-height:300px; object-fit:cover;">
@@ -108,7 +110,7 @@
 
     </section>
 
-    <section class="trail-map">
+    <section class="location container">
         <h2>Map Out Your Next Adventure</h2>
         <p>This wild and scenic stretch flows for over 135 miles through the Ozark Mountains in northern Arkansas, carving out towering bluffs, lush valleys, and countless opportunities for adventure.</p>
         <p>Explore the map below to get a feel for the land, trails, and river access points that make this area so unforgettable.</p>
@@ -148,6 +150,8 @@
   </footer>
   <!--this is a test of live coding we are currently all in the codespace can you see this reply with Y or N -->
   <!--Yo YES-->
+  <script src="assets/js/button.js"></script>
+
 
 </body>
 </html>

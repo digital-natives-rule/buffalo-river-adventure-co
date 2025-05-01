@@ -12,7 +12,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="assets/js/button.js"></script>
   <script src="assets/js/script.js"></script>
 
   <!---Google Font links-->
@@ -52,68 +51,59 @@
 </section>
 
 <!-- Wildlife Categories -->
-<section id="featured-grid" class="wildlife-categories">
+<section class="container">
     <h2>Wildlife Categories</h2>
     <p>Explore the different wildlife categories in the region</p>
-    <img src="assets/img/baby-bear-wildlife.jpg" alt="Baby Black Bear">
-    <div class="category-grid">
-        <div class="category">
-          <figure>
-            <img src="assets/img/Big-elk-contentsize-wildlife.jpg" alt="Elk">
-            <h4>Elk</h4>
-            <figcaption>Spot elk grazing in Boxley Valley, especially at dusk or dawn
-
-            </figcaption>
-          </figure>
+    <!--<img src="assets/img/baby-bear-wildlife.jpg" alt="Baby Black Bear">-->
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="assets/img/Big-elk-contentsize-wildlife.jpg" alt="Elk">
+        <div class="card-content">
+          <h3>Elk</h3>
+          <p>Spot elk grazing in Boxley Valley, especially at dusk or dawn.</p>
         </div>
-        <div class="category">
-          <figure>
-            <img src="assets/img/wormseye-bird-flying-wildlife.jpg" alt="Bird Flying">
-            <h4>Birds</h4>
-            <figcaption>Look up for eagles, hawks, and colorful songbirds.</figcaption>
-          </figure>
+      </div>
+      <div class="card-item">
+        <img src="assets/img/wormseye-bird-flying-wildlife.jpg" alt="Bird Flying">
+        <div class="card-content">
+          <h3>Birds</h3>
+          <p>Look up for eagles, hawks, and colorful songbirds.</p>
         </div>
-        <div class="category">
-          <figure>
-            <img src="assets/img/river-otter-contentsize-wildlife.jpg" alt="Otter on Log">
-            <h4>Mammals</h4>
-            <figcaption>Black bears, deer, bobcats, otters</figcaption>
-          </figure>
+      </div>
+      <div class="card-item">
+        <img src="assets/img/river-otter-contentsize-wildlife.jpg" alt="Otter on Log">
+        <div class="card-content">
+          <h3>Mammals</h3>
+          <p>Black bears, deer, bobcats, otters.</p>
         </div>
+      </div>
     </div>
 </section>
 
 <!-- Wildlife Watching Tips -->
-<section class="wildlife-tips">
-    <div class="tips-image">
+<section class="container two-col-grid">
+    <div class="float-left">
         <img src="assets/img/deer-reading-sign-wildlife.jpg" alt="Wildlife tips sign">
     </div>
-    <div class="tips-content">
+    <div>
         <h2>Wildlife Watching Tips</h2>
         <ul>
             <li>Best times to view wildlife: Early morning, late evening</li>
             <li>Responsible practices: Minimize noise, respect distance</li>
         </ul>
-    </div>
-</section>
-
-<!-- Photo Gallery -->
-<section class="photo-gallery">
-    <h2>Photo Gallery</h2>
-    <p>Captivating images of wildlife in Buffalo River.</p>
-    <!-- Placeholder for gallery slideshow -->
+      </div>
 </section>
 
 <!-- Discover Wildlife Moments -->
-<section class="wildlife-moments">
-    <h2>Discover Wildlife Moments</h2>
-    <div class="social-post">
-        <img src="assets/img/dog-on-canoe-wildlife.jpg" alt="Instagram post example">
-        <p>Caught a glimpse of this amazing creature today 🦌</p>
-    </div>
+<section class="social-card-section">
+  <h2>Discover Wildlife Moments</h2>
+  <div class="social-card">
+    <img src="assets/img/dog-on-canoe-wildlife.jpg" alt="Instagram post example">
+    <p>Caught a glimpse of this amazing creature today 🦌</p>
+  </div>
 </section>
 
-<!-- Plan Your Visit -->
+<!-- Plan Your Visit
 <section class="plan-visit">
     <h2>Plan Your Visit</h2>
     <form action="#">
@@ -127,6 +117,7 @@
     </form>
 </section>
 <button id="backToTop" onclick="scrollToTop()"><img src="assets/img/pointer-removebg-preview.png" alt="scrollarrow"></button>
+ -->
 <footer id="colophon">
     <div class="footer-content">
       <div class="footer-left">
@@ -158,6 +149,8 @@
   </footer>
   <!--this is a test of live coding we are currently all in the codespace can you see this reply with Y or N -->
   <!--Yo YES-->
+  <script src="assets/js/button.js"></script>
+
 
 </body>
 </html>
