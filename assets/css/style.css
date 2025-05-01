@@ -127,10 +127,11 @@ h3 {
 }
 
 .card-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 20px;
   padding: 1rem;
+  margin-bottom: 40px;
 }
 
 .card-item {
@@ -144,6 +145,7 @@ h3 {
   width: 100%;
   height: auto;
   display: block;
+  
 }
 
 .card-content {
@@ -508,6 +510,9 @@ header.primary div#primary-hero {
   font-size: 0.875rem;
   color: #666;
 }
+
+/*  ABOUT PAGE */
+
 
 /*rental subpages */
 
@@ -985,12 +990,12 @@ header.primary div#primary-hero {
   width:625px;
 }
 
-.amenities {
+.amenities, #amenities{
   position: relative;
   
 }
 
-.amenities img {
+.amenities img, #amenities img{
   position: absolute;
   top:0;
   right:0;
@@ -1004,18 +1009,18 @@ header.primary div#primary-hero {
 }
 
 
-.amenities h2{
+.amenities h2, #amenities h2{
   margin:0 auto;
   color: #000000;
   display: block;
   width:100%;
   padding-bottom: 10px;
-  padding-top: 40px;
+  padding-top: 60px;
 
   
 }
 
-.amenities ul {
+.amenities ul, #amenities ul {
   flex: 1;
   list-style-type: disc;
   padding-left: 20px;
@@ -1029,6 +1034,32 @@ header.primary div#primary-hero {
 
 
 /* Wildlife page */
+
+.two-col-grid{
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px;
+  align-items: flex-start;
+}
+
+.tipslist{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tipslist  li{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  
+}
+
+.tipslist li p{
+
+  margin: 0;
+}
 .wildlife-categories {
   display: flex;
   flex-wrap: wrap; 
@@ -1038,7 +1069,22 @@ header.primary div#primary-hero {
   position: relative;
  
 
+
 }
+
+.icon{
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  
+}
+
+.social-card-section h2{
+  text-align: center;
+}
+
+
+
  /*
 .wildlife-categories > img {
   float: right;
@@ -1073,6 +1119,7 @@ header.primary div#primary-hero {
 .wildlife-categories p{
   margin-left: 12rem;
 }
+  
 
 .category-grid {
   display:flex;
@@ -1100,7 +1147,7 @@ header.primary div#primary-hero {
   object-fit: cover;
   border-radius: 6px; 
 }
-
+*/
 
 /* #endregion media queries ----------- */
 
